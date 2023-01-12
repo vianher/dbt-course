@@ -1,0 +1,13 @@
+version: 2
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://1eb9a9f8.us1a.app.preset.io/superset/dashboard/9/?edit=true&native_filters_key=bFTERkI7jUi8YVdKcyp3BD0enjsoiwx8pfzOHBt_-Bob8uRIfd8C9x3JbnG_mhF6
+    description: Executive Dashboard about Airbnb listings and hosts
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_full_moon_reviews')
+    owner:
+      name: Victor Hernandez
+      email: victor.hernandez@clouddataconsulting.com
